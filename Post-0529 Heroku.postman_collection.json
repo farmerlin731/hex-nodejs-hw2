@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "0783b5c5-0499-4454-ab48-0a3b4b600f50",
+		"name": "Post-0529 Heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20778936"
+	},
+	"item": [
+		{
+			"name": "取得列表",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://salty-sea-26412.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"salty-sea-26412",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增代辦事項",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Farmer Heroku\",\n    \"content\":\"Hello World ~ :)\",\n    \"tags\":[\"天氣\"],\n    \"type\":\"person\"\n}"
+				},
+				"url": {
+					"raw": "https://salty-sea-26412.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"salty-sea-26412",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有事項",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://salty-sea-26412.herokuapp.com/posts",
+					"protocol": "https",
+					"host": [
+						"salty-sea-26412",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單一事項",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://salty-sea-26412.herokuapp.com/posts/629364a89078723fba1e24a3",
+					"protocol": "https",
+					"host": [
+						"salty-sea-26412",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"629364a89078723fba1e24a3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "更改單一事項",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Farmer Lin\",\n    \"content\":\"Hello World _updated:)\",\n    \"tags\":[\"天氣\"],\n    \"type\":\"person\"\n}"
+				},
+				"url": {
+					"raw": "https://salty-sea-26412.herokuapp.com/posts/629364a89078723fba1e24a3",
+					"protocol": "https",
+					"host": [
+						"salty-sea-26412",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"posts",
+						"629364a89078723fba1e24a3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
